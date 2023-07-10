@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>4.16</version>
+        <version>4.70</version>
     </parent>
 
     <artifactId>build-name-setter</artifactId>
@@ -15,7 +15,7 @@
     <url>https://github.com/jenkinsci/build-name-setter-plugin</url>
 
     <properties>
-        <jenkins.version>2.277.2</jenkins.version>
+        <jenkins.version>2.375.4</jenkins.version>
         <java.level>8</java.level>
         <asm.version>9.0</asm.version>
     </properties>
@@ -68,6 +68,13 @@
                 <artifactId>asm-util</artifactId>
                 <version>${asm.version}</version>
             </dependency>
+            <dependency>
+                <groupId>io.jenkins.tools.bom</groupId>
+                <artifactId>bom-2.277.x</artifactId>
+                <version>984.vb5eaac999a7e</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -75,12 +82,10 @@
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>token-macro</artifactId>
-            <version>2.15</version>
         </dependency>
         <dependency>
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>matrix-project</artifactId>
-            <version>1.18.1</version>
         </dependency>
     </dependencies>
 
