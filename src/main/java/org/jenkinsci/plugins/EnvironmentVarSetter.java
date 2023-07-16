@@ -6,10 +6,10 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import edu.umd.cs.findbugs.annotations.CheckForNull;
 import hudson.EnvVars;
 import hudson.model.AbstractBuild;
 import hudson.model.EnvironmentContributingAction;
-import javax.annotation.CheckForNull;
 import org.apache.commons.lang.StringUtils;
 
 /**

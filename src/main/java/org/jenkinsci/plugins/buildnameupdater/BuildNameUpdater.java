@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.servlet.ServletException;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import hudson.Extension;
@@ -18,7 +19,6 @@ import hudson.remoting.VirtualChannel;
 import hudson.tasks.BuildStepDescriptor;
 import hudson.tasks.Builder;
 import hudson.util.FormValidation;
-import javax.servlet.ServletException;
 import jenkins.MasterToSlaveFileCallable;
 import org.apache.commons.lang.StringUtils;
 import org.jenkinsci.plugins.buildnamesetter.Executor;
